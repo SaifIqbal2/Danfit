@@ -35,6 +35,10 @@ body {
   overflow-x: clip;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4 {
   font-family: var(--disp);
   margin: 0;
@@ -561,25 +565,86 @@ button {
 
 @media (max-width: 860px) {
   :root {
-    --R: 230px;
-    --H: 90px;
+    --R: 180px;
+    --H: 82px;
+  }
+  .hero-wrap {
+    height: 400vh;
+  }
+  .story-wrap {
+    height: 520vh;
+  }
+  .cols-track-wrap {
+    height: 420vh;
+  }
+  .mega-title {
+    font-size: clamp(72px, 20vw, 120px);
+  }
+  .ring-3d {
+    width: 150px;
+    height: 210px;
+  }
+  .rc-card {
+    border-radius: 16px;
+    gap: 6px;
+    padding: 10px;
+  }
+  .rc-card img {
+    height: 150px;
+  }
+  .rc-card span {
+    font-size: 10px;
   }
   .story-grid {
     grid-template-columns: 1fr;
     align-content: center;
     gap: 0;
+    padding: 0 5vw;
   }
   .chap-wrap {
-    height: 42vh;
+    height: 36vh;
+  }
+  .chap-item {
+    gap: 12px;
+  }
+  .chap-item h2 {
+    font-size: clamp(28px, 9vw, 42px);
+  }
+  .chap-item p {
+    font-size: 14px;
+  }
+  .cube-stage {
+    margin-top: 2vh;
   }
   .rail-track {
     display: none;
   }
   .modal-dialog {
     grid-template-columns: 1fr;
+    max-height: 88vh;
+    padding: 14px;
   }
   .col-panel {
-    width: 82vw;
+    width: min(82vw, 330px);
+    height: 68vh;
+    border-radius: 24px;
+    padding: 28px 24px;
+  }
+  .col-panel h3 {
+    font-size: clamp(28px, 9vw, 40px);
+  }
+  .col-panel p {
+    font-size: 14px;
+  }
+  .shop-section {
+    padding: 10vh 4vw;
+  }
+  .product-tilt-card {
+    border-radius: 20px;
+  }
+  .giant-outline {
+    font-size: clamp(58px, 18vw, 96px);
+    margin: 24px 0 12px;
   }
 }
 

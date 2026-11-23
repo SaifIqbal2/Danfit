@@ -54,7 +54,7 @@ export default function CollectionsPage() {
         </div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-14">
         {/* Editorial Header */}
         <div className="max-w-3xl space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/10 border border-red-600/30 text-xs font-mono text-red-600 font-bold">
@@ -116,7 +116,7 @@ export default function CollectionsPage() {
                 onMouseMove={handleCardMouseMove}
                 onMouseLeave={handleCardMouseLeave}
                 style={{ transformStyle: "preserve-3d", transition: "transform 0.25s ease-out, box-shadow 0.3s" }}
-                className="rounded-3xl bg-white border border-slate-200 hover:border-red-600/50 transition-all duration-300 overflow-hidden p-6 sm:p-10 space-y-8 shadow-xl hover:shadow-2xl relative group"
+                className="rounded-3xl bg-white border border-slate-200 hover:border-red-600/50 transition-all duration-300 overflow-hidden p-4 sm:p-10 space-y-6 sm:space-y-8 shadow-xl hover:shadow-2xl relative group"
               >
                 {/* Glow Backdrop */}
                 <div className="absolute top-0 right-0 w-80 h-80 bg-red-600/5 rounded-full blur-3xl pointer-events-none group-hover:bg-red-600/10 transition" />
@@ -161,7 +161,7 @@ export default function CollectionsPage() {
                   </div>
 
                   {/* Featured Category Image */}
-                  <div className="lg:col-span-7 relative h-72 sm:h-96 rounded-3xl overflow-hidden bg-slate-100 border border-slate-200 shadow-lg">
+                  <div className="lg:col-span-7 relative h-56 sm:h-72 lg:h-96 rounded-2xl sm:rounded-3xl overflow-hidden bg-slate-100 border border-slate-200 shadow-lg">
                     <Image
                       src={cat.image_url || "https://images.unsplash.com/photo-1517838277536-f5f99be501cd"}
                       alt={cat.name}

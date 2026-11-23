@@ -561,7 +561,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── 3.5 SHOWROOM & B2B MANUFACTURING CAPABILITIES ─── */}
-      <section className="py-24 px-6 lg:px-14 bg-[#dfe2ea] text-slate-900 border-y border-slate-300/80 relative overflow-hidden">
+      <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-14 bg-[#dfe2ea] text-slate-900 border-y border-slate-300/80 relative overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
@@ -593,7 +593,7 @@ export default function HomePage() {
           </div>
 
           {/* 5 Core Pillars from Official Showroom Banner */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10 sm:mb-16">
             {[
               {
                 icon: (
@@ -670,7 +670,7 @@ export default function HomePage() {
             <img
               src="/images/hero-showroom.jpg"
               alt="DanFit Industry Showroom & Production Facilities"
-              className="w-full h-auto object-cover max-h-[640px] opacity-95 transition-transform duration-700 hover:scale-[1.01]"
+              className="block w-full max-w-full h-auto min-h-[220px] sm:min-h-0 object-cover max-h-[360px] sm:max-h-[640px] opacity-95 transition-transform duration-700 hover:scale-[1.01]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-6 sm:p-10">
               <div className="flex flex-wrap items-center justify-between gap-4">
@@ -714,7 +714,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-4 justify-between items-center mb-10">
-            <div className="flex flex-wrap gap-2.5">
+            <div className="flex gap-2.5 overflow-x-auto w-full pb-2 sm:pb-0 scrollbar-none">
               {["All", ...categories.map((category) => category.name)].map((c) => (
                 <button
                   key={c}
@@ -745,7 +745,7 @@ export default function HomePage() {
               Nothing matches that search. Try another keyword or select All.
             </p>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-7">
               {filteredProducts.map((p) => (
                 <div key={p.id} className="transition-all duration-500">
                   <button
